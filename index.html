@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTC Jet Day 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="menu-bar">
+        <a href="#home">HOME</a>
+        <a href="#countdown">COUNTDOWN</a>
+        <a href="#dashboard">DASHBOARD</a>
+        <a href="#robotics">ROBOTICS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#about">ABOUT</a>
+    </nav>
+
+    <section class="welcome-banner" id="home">
+        <h1>WELCOME TO</h1>
+        <h2>COMFORT TENDERFEET COLLEGE</h2>
+        <h3>CTC JET DAY 2026</h3>
+        <p>INNOVATION AND TECHNOLOGY</p>
+    </section>
+
+    <div class="flying-drone">🚁</div>
+    <div class="laser-beam"></div>
+    <div class="laser-beam"></div>
+
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="laser-container">
+            <div class="laser laser1"></div>
+            <div class="laser laser2"></div>
+            <div class="laser laser3"></div>
+            <div class="laser laser4"></div>
+        </div>
+
+        <!-- 3D Earth Animation -->
+        <div class="earth-container">
+            <div class="earth">
+                <div class="earth-surface"></div>
+            </div>
+        </div>
+
+        <!-- Floating Particles -->
+        <div class="particles">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="stars"></div>
+        <div class="glow glow1"></div>
+        <div class="glow glow2"></div>
+        <div class="glow glow3"></div>
+    </div>
+
+    <!-- Main Welcome Screen -->
+    <main class="welcome-container">
+        <div class="logo-container">
+            <img src="logo.png" alt="Comfort Tenderfeet College Logo" class="school-logo">
+        </div>
+
+        <h2 class="school-name">COMFORT TENDERFEET COLLEGE</h2>
+
+        <div class="welcome-text">
+            <p class="welcome-small">PROUDLY PRESENTS</p>
+            <h1 class="welcome-title">WELCOME</h1>
+            <h2 class="jetday-title">JET DAY 2026</h2>
+        </div>
+
+        <div class="theme-box">
+            <p class="theme-label">THEME</p>
+            <h2 class="theme-title">INNOVATION AND TECHNOLOGY</h2>
+        </div>
+
+        <p class="welcome-message">
+            Celebrating Creativity, Exploring Innovation,
+            Building the Future.
+        </p>
+
+        <div class="date">NOVEMBER 4, 2026</div>
+
+        <footer>INNOVATION STARTS HERE</footer>
+    </main>
+
+    <button class="replay-button" onclick="replayAnimation()">↻ Replay Welcome</button>
+
+    <!-- Welcome animation script -->
+    <script>
+        function replayAnimation() {
+            document.body.classList.remove("animate");
+            void document.body.offsetWidth;
+            document.body.classList.add("animate");
+        }
+
+        window.addEventListener("load", function () {
+            document.body.classList.add("animate");
+        });
+    </script>
+
+    <!-- Countdown -->
+    <section class="countdown-section" id="countdown">
+        <h2>COUNTDOWN TO CTC JET DAY</h2>
+        <div class="countdown-timer">
+            <div><span id="days">00</span><small>DAYS</small></div>
+            <div><span id="hours">00</span><small>HOURS</small></div>
+            <div><span id="minutes">00</span><small>MINUTES</small></div>
+            <div><span id="seconds">00</span><small>SECONDS</small></div>
+        </div>
+    </section>
+
+    <div class="digital-clock">
+        <h2 id="clock">00:00:00</h2>
+        <p id="date"></p>
+    </div>
+
+    <!-- Cinematic Intro -->
+    <div id="intro">
+        <div class="intro-glow"></div>
+        <img src="logo.png" class="intro-logo" alt="CTC Logo">
+        <h1 class="intro-school">COMFORT TENDERFEET COLLEGE</h1>
+        <h2 class="intro-welcome">WELCOME TO JET DAY 2026</h2>
+        <p class="intro-theme">INNOVATION AND TECHNOLOGY</p>
+
+        <div class="tech-icons">
+            <span>🤖</span><span>💻</span><span>🚀</span>
+            <span>⚙️</span><span>🛰️</span><span>🔬</span>
+        </div>
+    </div>
+
+    <section class="robotics-section" id="robotics">
+        <h2>THE WORLD OF TECHNOLOGY &amp; ROBOTICS</h2>
+        <p class="robotics-intro">Exploring the future through creativity, science and innovation.</p>
+
+        <div class="robotics-grid">
+            <div class="robotics-card"><span>🤖</span><h3>ROBOTICS</h3><p>Building intelligent machines that can perform tasks.</p></div>
+            <div class="robotics-card"><span>🦾</span><h3>ARTIFICIAL INTELLIGENCE</h3><p>Creating smart systems that learn and solve problems.</p></div>
+            <div class="robotics-card"><span>🚀</span><h3>SPACE TECHNOLOGY</h3><p>Discovering new possibilities beyond our planet.</p></div>
+            <div class="robotics-card"><span>💻</span><h3>COMPUTER SCIENCE</h3><p>Using programming to develop digital solutions.</p></div>
+            <div class="robotics-card"><span>🛸</span><h3>DRONE TECHNOLOGY</h3><p>Exploring unmanned aerial technology.</p></div>
+            <div class="robotics-card"><span>⚙️</span><h3>ENGINEERING</h3><p>Turning creative ideas into real-world innovations.</p></div>
+        </div>
+    </section>
+
+    <section class="dashboard-section" id="dashboard">
+        <h1>CTC JET DAY DASHBOARD</h1>
+        <div class="activity-ticker">
+            <div class="ticker-text">
+                WELCOME TO CTC JET DAY 2026 • INNOVATION AND TECHNOLOGY •
+                CELEBRATING CREATIVITY • BUILDING THE FUTURE •
+            </div>
+        </div>
+        <p>INNOVATION • CREATIVITY • TECHNOLOGY</p>
+
+        <div class="stats-grid">
+            <div class="stat-card"><h2 id="projectCount">00</h2><p>TOTAL PROJECTS</p></div>
+            <div class="stat-card"><h2 id="studentCount">00</h2><p>PARTICIPATING STUDENTS</p></div>
+            <div class="stat-card"><h2>06</h2><p>TECHNOLOGY CATEGORIES</p></div>
+            <div class="stat-card"><h2>CTC</h2><p>PARTICIPATING SCHOOL</p></div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="dashboard-card"><span>🚀</span><h2>PROJECT SHOWCASE</h2><p>Discover innovative student projects.</p></div>
+            <div class="dashboard-card"><span>🤖</span><h2>ROBOTICS</h2><p>Explore robotics and intelligent machines.</p></div>
+            <div class="dashboard-card"><span>💻</span><h2>COMPUTER SCIENCE</h2><p>Discover coding and digital innovations.</p></div>
+            <div class="dashboard-card"><span>🛸</span><h2>DRONE TECHNOLOGY</h2><p>Explore the future of flight.</p></div>
+            <div class="dashboard-card"><span>🔬</span><h2>SCIENCE &amp; INNOVATION</h2><p>Ideas, experiments and discoveries.</p></div>
+            <div class="dashboard-card"><span>📢</span><h2>ANNOUNCEMENTS</h2><p>Stay updated with Jet Day activities.</p></div>
+        </div>
+    </section>
+
+    <section class="project-gallery" id="projects">
+        <h1>STUDENT PROJECT SHOWCASE</h1>
+        <p>Discover the creativity and innovation of our students.</p>
+
+        <div class="project-grid">
+            <div class="project-card"><div class="project-image">🤖</div><h2>ROBOTICS PROJECT</h2><p>Student: To be announced</p><p>Department: To be announced</p></div>
+            <div class="project-card"><div class="project-image">🚁</div><h2>DRONE PROJECT</h2><p>Student: To be announced</p><p>Department: To be announced</p></div>
+            <div class="project-card"><div class="project-image">💡</div><h2>SMART ELECTRONICS</h2><p>Student: To be announced</p><p>Department: To be announced</p></div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <h2>ABOUT CTC JET DAY</h2>
+        <p>CTC Jet Day celebrates innovation, creativity, science and technology through student projects.</p>
+    </section>
+
+    <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+    <section class="announcements" id="announcements">
+        <h2>JET DAY ANNOUNCEMENTS</h2>
+        <div class="announcement-card">
+            <span>📢</span>
+            <h3>CTC JET DAY 2026</h3>
+            <p>Get ready for a celebration of innovation, creativity and technology!</p>
+            <strong>DATE: NOVEMBER 4, 2026</strong>
+        </div>
+    </section>
+
+    <section class="programme-section" id="programme">
+        <h2>JET DAY EVENT PROGRAMME</h2>
+        <div class="programme-card">
+            <h3>EVENT HIGHLIGHTS</h3>
+            <p>🚀 Opening Ceremony</p>
+            <p>🤖 Robotics Exhibition</p>
+            <p>💻 Computer Project Showcase</p>
+            <p>🔬 Science and Technology Exhibition</p>
+            <p>🏆 Awards and Recognition</p>
+            <p>🎤 Closing Ceremony</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <h2>COMFORT TENDERFEET COLLEGE</h2>
+        <p>CTC JET DAY 2026</p>
+        <p>INNOVATION AND TECHNOLOGY</p>
+        <small>Celebrating Creativity • Inspiring Innovation • Building the Future</small>
+    </footer>
+
+    <!-- Load the external JavaScript only once, at the end -->
+    <script src="script.js"></script>
+</body>
+</html>
